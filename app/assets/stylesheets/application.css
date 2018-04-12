@@ -1,15 +1,154 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
  *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
+ *= require reset
+ *= require bootstrap-grid
  *= require_self
  */
+
+body {
+  background: #F5F5F5;
+  color: #444;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background: #4796E3;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+header .container {
+  padding-bottom: 1.75rem;
+  padding-top: 1.75rem;
+}
+
+.bg-green {
+  background: #b7f3e2;
+  color: #1fbf92
+}
+
+.bg-red {
+  background: #fdf3f2;
+  color: #e74b3c
+}
+
+.summary {
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.monthly-summary {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.summary-item {
+  border-radius: 0.25rem;
+  padding: 4rem 0;
+}
+
+.filters li {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.filters i {
+  margin-right: 0.75rem;
+}
+
+.transaction {
+  background: white;
+  margin-bottom: 0.075rem;
+  padding: 1.5rem 0;
+}
+
+.category {
+  align-items: center;
+  border-radius: 0.25rem;
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  font-size: 1.25rem;
+  width: 4rem;
+}
+
+.description {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0 1.5rem;
+}
+
+.date {
+  color: #ada8a8;
+  font-size: 0.875rem;
+  padding: 0.25rem 1.5rem 0;
+}
+
+.amount {
+  font-size: 1.175rem;
+  font-weight: 600;
+  padding: 0 1rem;
+  text-align: right;
+}
+
+.amount-green {
+  background: #b7f3e2;
+  border-radius: 2rem;
+  color: #1fbf92;
+  margin: 0 1.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.amount-red {
+  border-radius: 2rem;
+  background: #fdf3f2;
+  color: #e74b3c;
+  margin: 0 1.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+i {
+  text-align: center;
+}
+
+.align-self-center {
+  -ms-flex-item-align: center !important;
+  align-self: center !important;
+}
+
+.justify-content-center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+.add-transaction {
+  text-align: right;
+}
+
+.add-transaction a {
+  color: #3088bf;
+  font-size: 1.5rem;
+}
+
+.add-transaction a i {
+  margin-right: 0.5rem;
+}
+
+.add-transaction a button {
+  background: #3088bf;
+  border-radius: 2rem;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+}
